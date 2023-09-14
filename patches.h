@@ -57,6 +57,12 @@
  */
 #define EMOJI_HIGHLIGHT_PATCH 0
 
+/* This patch make it so that fuzzy matches gets highlighted and is therefore meant
+ * to be used together with the fuzzymatch patch.
+ * https://tools.suckless.org/dmenu/patches/fuzzyhighlight/
+ */
+#define FUZZYHIGHLIGHT_PATCH 1
+
 /* This patch adds support for fuzzy-matching to dmenu, allowing users to type non-consecutive
  * portions of the string to be matched.
  * https://tools.suckless.org/dmenu/patches/fuzzymatch/
@@ -83,6 +89,7 @@
 #define GRIDNAV_PATCH 0
 
 /* This patch highlights the individual characters of matched text for each dmenu list entry.
+<<<<<<< HEAD
  * If combined with the fuzzymatch patch then fuzzy highlight will be used for highlighting
  * depending on whether fuzzy matching is enabled.
  *
@@ -90,6 +97,10 @@
  *
  * https://tools.suckless.org/dmenu/patches/highlight/
  * https://tools.suckless.org/dmenu/patches/fuzzyhighlight/
+=======
+ * The fuzzy highlight patch takes precedence over this patch.
+ * https://tools.suckless.org/dmenu/patches/highlight/
+>>>>>>> 462d933 (Apply fzf patch with key bindings)
  */
 #define HIGHLIGHT_PATCH 0
 
@@ -215,8 +226,11 @@
  * A long term fix for the libXft library is pending approval of this pull request:
  * https://gitlab.freedesktop.org/xorg/lib/libxft/-/merge_requests/1
  *
+<<<<<<< HEAD
  * Known issue: not compatible with the scroll patch
  *
+=======
+>>>>>>> 462d933 (Apply fzf patch with key bindings)
  * Also see:
  * https://developer.gnome.org/pygtk/stable/pango-markup-language.html
  * https://github.com/StillANixRookie/dmenu-pango
@@ -303,9 +317,12 @@
 
 /* This patch adds support for text scrolling and no longer appends '...' for long input as
  * it can handle long text.
+<<<<<<< HEAD
  *
  * Known issue: not compatible with the pango patch
  *
+=======
+>>>>>>> 462d933 (Apply fzf patch with key bindings)
  * https://tools.suckless.org/dmenu/patches/scroll/
  */
 #define SCROLL_PATCH 0
